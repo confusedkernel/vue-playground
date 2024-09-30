@@ -1,5 +1,8 @@
 <script setup>
-name: "BaseHeader";
+import {ref } from "vue";
+const websiteName =ref("Placeholder");
+const faq = ref("常見問題");
+const link = ref("https://www.google.com");
 </script>
 
 <!--Testing-->
@@ -14,14 +17,14 @@ name: "BaseHeader";
         <a
           class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-black flex-grow"
         >
-          Placeholder
+          {{ websiteName }}
         </a>
         <button
           class="text-sm text-blue-500 cursor-pointer leading-none px-3 py-2 border-2 border-solid border-blue-500 bg-transparent block outline-none flex-shrink-0 hover:border-blue-700 hover:text-blue-700"
           type="button"
           onclick="window.location.href='https://www.google.com'"
         >
-          常見問題
+          {{ faq }}
         </button>
       </div>
     </div>

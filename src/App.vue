@@ -4,6 +4,10 @@ import Footer from "@/components/BaseFooter.vue";
 </script>
 
 <template>
-  <Header />
-  <Footer />
+  <header>
+    <Header />
+  </header>
+  <footer>
+    <Footer />
+  </footer>
 </template>
