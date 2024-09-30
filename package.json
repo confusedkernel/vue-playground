@@ -7,9 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ignore-path .gitignore --fix && prettier --config .prettierrc --check src",
-    "format": "prettier . --write",
-    "lint-ci": "eslint . --ignore-path .gitignore && prettier --config .prettierrc --check src"
+    "lint": "npx eslint . -c eslintrc.js --fix && prettier -c .prettierrc --check src",
+    "format": "prettier .  --write",
+      "lint-ci": "npx eslint . -c eslintrc.js && prettier -c .prettierrc --check src"
   },
   "dependencies": {
     "vue": "^3.4.29"
